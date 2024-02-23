@@ -1,0 +1,208 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+}
+header {
+    text-align: center;
+    padding: 20px 0;
+}
+/* styles.css */
+
+/* Fixed header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Style for the navigation links */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+/* Adjust the content padding to prevent overlapping with fixed header */
+main {
+    padding-top: 60px; /* Adjust this value based on your header height */
+}
+/* Logo styles */
+.logo-left,
+.logo-right {
+    width: 120px; /* Adjust the size of the logos */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 10px; /* Adjust spacing */
+    
+}
+
+.logo-left {
+    order: -1; /* Place the left logo before the text */
+}
+
+.logo-right {
+    order: 1; /* Place the right logo after the text */
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 0%;
+}
+
+.tagline {
+    font-size: 18px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a:hover {
+    color: gray;
+}
+/* Add this style for the paragraphs under each section */
+main section p {
+    text-align: justify;
+    max-width: 800px; /* Adjust this value as needed */
+    margin: 0 auto; /* This will center the paragraph horizontally */
+}
+
+/* Center the content of the sections vertically */
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* This will center the text horizontally */
+    height: 100vh; /* Adjust this value if necessary */
+}
+
+/* Ensure the footer stays at the bottom */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: gray;
+}
+/* Styles for menu section */
+.menu-section {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.menu-bg {
+    width: 500%;
+    height: 75%; /* Divide the screen equally */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: beige;
+}
+
+.food-menu {
+    background-image: url('food.jpg'); /* Replace with the path to your food menu image */
+}
+
+.drinks-menu {
+    background-image: url('Drinks.jpg'); /* Replace with the path to your drinks menu image */
+}
+
+/* Styles for menu headings */
+.menu-bg h2 {
+    font-size: 2em; /* Adjust font size as needed */
+}
+.menu-bg h2 {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    padding: 5px; /* Adjust padding as needed */
+    margin-top: 150px; /* Adjust margin as needed */
+}
+
+#contact p {
+    text-align: center; /* Justify text content */
+}
+
+#contact {
+    text-align: center; /* Align content to the center */
+}
+
+/* Styles for image grid section */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    grid-template-rows: repeat(2, 1fr); /* Two rows */
+    gap: 10px; /* Adjust gap between cells */
+    margin: -230px 0; /* Adjust margin as needed */
+    padding: 10px;
+    height: 100vh; /* Set the height of the grid to 100% of viewport height */
+    overflow: hidden; /* Hide overflow */
+}
+
+.image-box {
+    position: relative; /* Ensure the container is relatively positioned */
+    overflow: hidden; /* Hide overflow */
+}
+.image-box img {
+    width: 100%; /* Make the images fill their containers */
+    height: 100%; /* Make the images fill their containers */
+    object-fit: cover; /* Scale the images while preserving their aspect ratio */
+}
